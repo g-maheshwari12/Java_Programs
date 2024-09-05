@@ -1,0 +1,9 @@
+import java.xyz.*;
+public class testing
+{
+	public static void main(String []args)
+	{
+		testing t = new testing();
+		t.show();
+	}
+}

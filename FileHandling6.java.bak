@@ -1,0 +1,13 @@
+import java.io.*;
+public class FileHandling6
+{
+	public static void main(String []args) throws IOException
+	{
+		FileWriter f = new FileWriter("File5.txt",true);
+		BufferedWriter bf = new BufferedWriter(f);
+		bf.write("Hello Gaurav...");
+		bf.write("This is your PC");
+		bf.close();
+	}
+}
+		

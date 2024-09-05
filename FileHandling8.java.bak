@@ -1,0 +1,22 @@
+import java.io.*;
+public class FileHandling8
+{
+	public static void main(String []args) throws IOException
+	{
+		FileReader f = new FileReader("File5.txt");
+		BufferedReader bf = new BufferedReader(f);
+		String s = bf.readLine();
+		String s1 = bf.readLine();
+		String s2 = bf.readLine();
+		String s3 = bf.readLine();
+		String s4 = bf.readLine();
+		String s5 = bf.readLine();
+		System.out.println(s);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s5);
+		bf.close();
+	}
+}

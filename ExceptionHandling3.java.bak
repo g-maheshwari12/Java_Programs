@@ -1,0 +1,21 @@
+import java.util.*;
+public class ExceptionHandling3
+{
+	public static void main(String[] args)
+	{
+		String str = null;
+		try
+		{
+			System.out.println("In try block");
+			System.out.println(str);
+			System.out.println("Length of given string is : "+ str.length());
+			System.out.println("Try block ends");
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println("Exception Caught " +e);
+			System.out.println("Program execute with exception");
+		}
+		System.out.println("Programs executed successfully");
+	}
+}

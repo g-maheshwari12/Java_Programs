@@ -1,0 +1,30 @@
+class Thread4 implements Runnable
+{
+	public void run()
+	{
+		for(int i=1;i<5;i++)
+		{
+			System.out.println("Thread Thread4... " +i);
+		}
+	}
+}
+class Bye extends Thread4
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Main Start");
+		Thread4 h1 = new Thread4();
+		Thread4 h2 = new Thread4();
+		Thread4 h3 = new Thread4();
+		Thread4 h4 = new Thread4();
+		Thread t1 = new Thread(h1);
+		Thread t2 = new Thread(h2);
+		Thread t3 = new Thread(h3);
+		Thread t4 = new Thread(h4);
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		System.out.println("Main end");
+	}
+}
